@@ -5,7 +5,10 @@ public class AppLauncher {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                new WeatherAppGui().setVisible(true);
+//                new WeatherAppGui().setVisible(true);
+
+                System.out.println(WeatherApp.getLocationData("Faridabad"));
+
             }
         });
     }
